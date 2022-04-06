@@ -181,8 +181,24 @@ public class QiYu20220406 {
      * 1 <= bad <= n <= 231 - 1
      */
     public static class Solution2  {
+        // 随便定义一个，为了编译可以通过
+        public static boolean isBadVersion(int n) {
+            return n > 2;
+        }
+
         public static int firstBadVersion(int n) {
-            return 1;
+            // 此处需要定义为1，因为调用的不是下标，而是具体的版本，版本是[1, 2, ..., n]
+            int low = 1;
+            int high = n;
+            while (low < high) {
+                int mid = low + (high - low)/2;
+                if (isBadVersion(mid)) {
+                    high = mid;
+                } else {
+                    low = mid + 1;
+                }
+            }
+            return low;
         }
     }
 }
