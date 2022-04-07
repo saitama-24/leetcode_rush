@@ -119,9 +119,30 @@ public class QiYu20220407 {
      * 尽可能想出更多的解决方案，至少有 三种 不同的方法可以解决这个问题。
      * 你可以使用空间复杂度为 O(1) 的 原地 算法解决这个问题吗？
      */
-    static class Solution {
+    static class Solution3 {
+        // 解法1：定义新数组存储，时间复杂度O(n), 空间复杂度O(n)
         public static void rotate(int[] nums, int k) {
+            int len = nums.length;
+            if (k % len == 0) {
+                return;
+            }
+            int realK = k % len;
+            int[] arr = new int[len];
+            // 定义起始位置
+            int pos = len - realK;
+            for (int i = 0; i < arr.length; i++) {
+                arr[i] = nums[pos];
+                pos ++;
+                if (pos == len) {
+                    // 如果当前索引已经等于数组长度，说明已经超出索引范围，需从头遍历
+                    pos = 0;
+                }
+            }
+            System.arraycopy(arr, 0, nums, 0, len);
+        }
 
+        public static void main(String[] args) {
+            rotate(new int[]{1,2,3,4,5,6,7}, 3);
         }
     }
 }
