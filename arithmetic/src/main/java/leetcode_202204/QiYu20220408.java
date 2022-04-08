@@ -1,5 +1,9 @@
 package leetcode_202204;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * @ClassName: QiYu20220408
  * @Description: QiYu20220408
@@ -85,7 +89,95 @@ public class QiYu20220408 {
      */
     static class Solution1 {
         public static int[] twoSum(int[] numbers, int target) {
-            return numbers;
+            int len = numbers.length;
+            int head = 0;
+            int tail = len - 1;
+            int[] arr = new int[2];
+            while (head < tail) {
+                int sum = numbers[head] + numbers[tail];
+                if (sum == target) {
+                    arr[0] = head + 1;
+                    arr[1] = tail + 1;
+                    return arr;
+                } else if (sum < target) {
+                    head ++;
+                } else {
+                    tail --;
+                }
+            }
+            return arr;
+        }
+
+        public static void main(String[] args) {
+            System.out.println(Arrays.toString(twoSum(new int[]{-1, 0}, -1)));
+        }
+    }
+
+    /**
+     * 15. 三数之和
+     * 给你一个包含 n 个整数的数组 nums，判断 nums 中是否存在三个元素 a，b，c ，使得 a + b + c = 0 ？请你找出所有和为 0 且不重复的三元组。
+     *
+     * 注意：答案中不可以包含重复的三元组。
+     *
+     *
+     *
+     * 示例 1：
+     *
+     * 输入：nums = [-1,0,1,2,-1,-4]
+     * 输出：[[-1,-1,2],[-1,0,1]]
+     * 示例 2：
+     *
+     * 输入：nums = []
+     * 输出：[]
+     * 示例 3：
+     *
+     * 输入：nums = [0]
+     * 输出：[]
+     *
+     *
+     * 提示：
+     *
+     * 0 <= nums.length <= 3000
+     * -105 <= nums[i] <= 105
+     */
+    static class Solution2 {
+        public static List<List<Integer>> threeSum(int[] nums) {
+            if (nums.length < 3) {
+                return new ArrayList<>();
+            }
+            Arrays.sort(nums);
+            if (nums[0] >= 0) {
+                return new ArrayList<>();
+            }
+
+            int head = 0;
+            int tail = nums.length -1;
+            int prev = nums.length -2;
+            List<List<Integer>> lists = new ArrayList<>();
+            // todo 不全
+            while (head < prev) {
+                int sum = nums[head] + nums[tail] + nums[prev];
+                if (sum == 0) {
+                    List<Integer> list = new ArrayList<>();
+                    list.add(nums[head]);
+                    list.add(nums[tail]);
+                    list.add(nums[prev]);
+                    lists.add(list);
+                    head ++;
+                    tail = nums.length -1;
+                    prev = nums.length -2;
+                } else if (sum > 0) {
+                    tail = prev;
+                    prev --;
+                } else {
+                    head ++;
+                }
+            }
+            return lists;
+        }
+
+        public static void main(String[] args) {
+            System.out.println(threeSum(new int[]{-1,0,1,2,-1,-4}));
         }
     }
 }
