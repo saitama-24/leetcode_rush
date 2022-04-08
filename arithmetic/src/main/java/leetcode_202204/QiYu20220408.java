@@ -3,7 +3,7 @@ package leetcode_202204;
 /**
  * @ClassName: QiYu20220408
  * @Description: QiYu20220408
- * @Author: wangzhenjie
+ * @Author: 琦玉
  * @Date: 2022年04月08日 11:44:58
  */
 public class QiYu20220408 {
