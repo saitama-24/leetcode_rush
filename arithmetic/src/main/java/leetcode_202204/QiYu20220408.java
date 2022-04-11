@@ -1,8 +1,6 @@
 package leetcode_202204;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * @ClassName: QiYu20220408
@@ -138,7 +136,7 @@ public class QiYu20220408 {
      * 提示：
      *
      * 0 <= nums.length <= 3000
-     * -105 <= nums[i] <= 105
+     * -10^5 <= nums[i] <= 10^5
      */
     static class Solution2 {
         public static List<List<Integer>> threeSum(int[] nums) {
@@ -146,38 +144,84 @@ public class QiYu20220408 {
                 return new ArrayList<>();
             }
             Arrays.sort(nums);
-            if (nums[0] >= 0) {
+            if (nums[0] >= 0 && (nums[1] != 0)) {
+                // 防止 0 0 0 用例
                 return new ArrayList<>();
             }
 
-            int head = 0;
-            int tail = nums.length -1;
-            int prev = nums.length -2;
-            List<List<Integer>> lists = new ArrayList<>();
-            // todo 不全
-            while (head < prev) {
-                int sum = nums[head] + nums[tail] + nums[prev];
-                if (sum == 0) {
+            Map<Integer, List<Integer>> map = new HashMap<>();
+            for (int i = 0; i < nums.length; i++) {
+                if (map.get(nums[i]) == null) {
                     List<Integer> list = new ArrayList<>();
-                    list.add(nums[head]);
-                    list.add(nums[tail]);
-                    list.add(nums[prev]);
-                    lists.add(list);
-                    head ++;
-                    tail = nums.length -1;
-                    prev = nums.length -2;
-                } else if (sum > 0) {
-                    tail = prev;
-                    prev --;
+                    list.add(i);
+                    map.put(nums[i], list);
                 } else {
-                    head ++;
+                    List<Integer> list = map.get(nums[i]);
+                    list.add(i);
+                }
+            }
+            List<List<Integer>> lists = new ArrayList<>();
+            if (map.get(0) != null && map.get(0).size() >= 3) {
+                List<Integer> arr = new ArrayList<>();
+                arr.add(0);
+                arr.add(0);
+                arr.add(0);
+                lists.add(arr);
+            }
+            Map<Integer, List<Integer>> usedMap = new HashMap<>();
+            for (int i = 0; i < nums.length; i++) {
+                if (nums[i] >= 0) {
+                    break;
+                }
+                for (int j = nums.length - 1; j > 0; j--) {
+                    if (nums[j] <= 0) {
+                        break;
+                    }
+                    int sum = nums[i] + nums[j];
+                    List<Integer> list = map.get(-sum);
+                    if (list != null) {
+                        boolean isExists = false;
+                        for (Integer idx : list) {
+                            if (idx < j && idx > i) {
+                                isExists = true;
+                                break;
+                            }
+                        }
+                        if (isExists) {
+                            List<Integer> list1 = usedMap.get(nums[i]);
+                            boolean isUsed = false;
+                            if (null != list1) {
+                                for (Integer integer : list1) {
+                                    if (integer == nums[j]) {
+                                        isUsed = true;
+                                        break;
+                                    }
+                                }
+                            }
+                            if (!isUsed) {
+                                List<Integer> arr = new ArrayList<>();
+                                arr.add(nums[i]);
+                                arr.add(nums[j]);
+                                arr.add(-sum);
+                                lists.add(arr);
+                                if (usedMap.get(nums[i]) != null) {
+                                    List<Integer> usedList = usedMap.get(nums[i]);
+                                    usedList.add(nums[j]);
+                                } else {
+                                    List<Integer> usedList = new ArrayList<>();
+                                    usedList.add(nums[j]);
+                                    usedMap.put(nums[i], usedList);
+                                }
+                            }
+                        }
+                    }
                 }
             }
             return lists;
         }
 
         public static void main(String[] args) {
-            System.out.println(threeSum(new int[]{-1,0,1,2,-1,-4}));
+            System.out.println(threeSum(new int[]{-4,-2,-2,-2,0,1,2,2,2,3,3,4,4,6,6}));
         }
     }
 }
