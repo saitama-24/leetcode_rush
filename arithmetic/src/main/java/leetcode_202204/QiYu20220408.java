@@ -139,6 +139,11 @@ public class QiYu20220408 {
      * -10^5 <= nums[i] <= 10^5
      */
     static class Solution2 {
+        /**
+         * 时间复杂度O(N^2) 空间复杂度O(N)
+         * @param nums
+         * @return
+         */
         public static List<List<Integer>> threeSum(int[] nums) {
             if (nums.length < 3) {
                 return new ArrayList<>();
