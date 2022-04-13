@@ -350,6 +350,9 @@ public class QiYu20220413 {
      */
     static class Solution5 {
         public static boolean canConstruct(String ransomNote, String magazine) {
+            if (ransomNote.length() > magazine.length()) {
+                return false;
+            }
             int[] arr1 = new int[26];
             int[] arr2 = new int[26];
 
