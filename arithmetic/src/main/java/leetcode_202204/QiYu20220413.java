@@ -371,6 +371,29 @@ public class QiYu20220413 {
             return true;
         }
 
+        /**
+         * 其实不需要定义两个数组，对次数做减法判断是否小于0即可
+         * @param ransomNote
+         * @param magazine
+         * @return
+         */
+        public static boolean canConstruct2(String ransomNote, String magazine) {
+            if (ransomNote.length() > magazine.length()) {
+                return false;
+            }
+            int[] arr1 = new int[26];
+            for (char c : magazine.toCharArray()) {
+                arr1[c - 97] ++;
+            }
+            for (char c : ransomNote.toCharArray()) {
+                arr1[c - 97] --;
+                if (arr1[c - 97] < 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
         public static void main(String[] args) {
             System.out.println(canConstruct("", "aa"));
         }
