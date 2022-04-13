@@ -234,14 +234,7 @@ public class QiYu20220413 {
                 for (int i = head; i <= tail; i++) {
                     compareArr[s2CharArray[i] - 97] ++;
                 }
-                boolean isExist = true;
-                for (int i = 0; i < compareArr.length; i++) {
-                    if (compareArr[i] != charArr[i]) {
-                        isExist = false;
-                        break;
-                    }
-                }
-                if (isExist) {
+                if (Arrays.equals(charArr, compareArr)) {
                     return true;
                 }
                 head ++;
