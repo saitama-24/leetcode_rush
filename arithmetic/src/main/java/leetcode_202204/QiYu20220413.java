@@ -1,7 +1,6 @@
 package leetcode_202204;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 /**
  * @ClassName: QiYu20220413
@@ -190,6 +189,69 @@ public class QiYu20220413 {
 
         public static void main(String[] args) {
             System.out.println(lengthOfLongestSubstring("abcabcbb"));
+        }
+    }
+
+    /**
+     * 567. 字符串的排列
+     * 给你两个字符串 s1 和 s2 ，写一个函数来判断 s2 是否包含 s1 的排列。如果是，返回 true ；否则，返回 false 。
+     *
+     * 换句话说，s1 的排列之一是 s2 的 子串 。
+     *
+     *
+     *
+     * 示例 1：
+     *
+     * 输入：s1 = "ab" s2 = "eidbaooo"
+     * 输出：true
+     * 解释：s2 包含 s1 的排列之一 ("ba").
+     * 示例 2：
+     *
+     * 输入：s1= "ab" s2 = "eidboaoo"
+     * 输出：false
+     *
+     *
+     * 提示：
+     *
+     * 1 <= s1.length, s2.length <= 10^4
+     * s1 和 s2 仅包含小写字母
+     */
+    static class Solution3 {
+        public static boolean checkInclusion(String s1, String s2) {
+            if (s1.length() > s2.length()) {
+                return false;
+            }
+            int[] charArr = new int[26];
+            for (char c : s1.toCharArray()) {
+                charArr[c- 97] ++;
+            }
+
+            int head = 0;
+            int tail = s1.length() - 1;
+            char[] s2CharArray = s2.toCharArray();
+            while (tail < s2.length()) {
+                int[] compareArr = new int[26];
+                for (int i = head; i <= tail; i++) {
+                    compareArr[s2CharArray[i] - 97] ++;
+                }
+                boolean isExist = true;
+                for (int i = 0; i < compareArr.length; i++) {
+                    if (compareArr[i] != charArr[i]) {
+                        isExist = false;
+                        break;
+                    }
+                }
+                if (isExist) {
+                    return true;
+                }
+                head ++;
+                tail ++;
+            }
+            return false;
+        }
+
+        public static void main(String[] args) {
+            System.out.println(checkInclusion("ab", "eidbaooo"));
         }
     }
 }
