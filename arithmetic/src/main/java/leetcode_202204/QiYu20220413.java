@@ -1,5 +1,7 @@
 package leetcode_202204;
 
+import com.sun.org.apache.xalan.internal.xsltc.dom.SortingIterator;
+
 import java.util.*;
 
 /**
@@ -245,6 +247,75 @@ public class QiYu20220413 {
 
         public static void main(String[] args) {
             System.out.println(checkInclusion("ab", "eidbaooo"));
+        }
+    }
+
+    /**
+     * 4. 寻找两个正序数组的中位数
+     * 给定两个大小分别为 m 和 n 的正序（从小到大）数组 nums1 和 nums2。请你找出并返回这两个正序数组的 中位数 。
+     *
+     * 算法的时间复杂度应该为 O(log (m+n)) 。
+     *
+     *
+     *
+     * 示例 1：
+     *
+     * 输入：nums1 = [1,3], nums2 = [2]
+     * 输出：2.00000
+     * 解释：合并数组 = [1,2,3] ，中位数 2
+     * 示例 2：
+     *
+     * 输入：nums1 = [1,2], nums2 = [3,4]
+     * 输出：2.50000
+     * 解释：合并数组 = [1,2,3,4] ，中位数 (2 + 3) / 2 = 2.5
+     *
+     *
+     *
+     *
+     * 提示：
+     *
+     * nums1.length == m
+     * nums2.length == n
+     * 0 <= m <= 1000
+     * 0 <= n <= 1000
+     * 1 <= m + n <= 2000
+     * -10^6 <= nums1[i], nums2[i] <= 10^6
+     */
+    static class Solution4 {
+        public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
+            int[] newNums = new int[nums1.length + nums2.length];
+            int pos1 = 0;
+            int pos2 = 0;
+            int idx = 0;
+            while (pos1 < nums1.length || pos2 < nums2.length) {
+                if (pos1 == nums1.length) {
+                    newNums[idx++] = nums2[pos2];
+                    pos2 ++;
+                } else if (pos2 == nums2.length) {
+                    newNums[idx++] = nums1[pos1];
+                    pos1 ++;
+                } else {
+                    int num1 = nums1[pos1];
+                    int num2 = nums2[pos2];
+                    if (num1 < num2) {
+                        newNums[idx++] = num1;
+                        pos1 ++;
+                    } else {
+                        newNums[idx++] = num2;
+                        pos2 ++;
+                    }
+                }
+            }
+
+            if (newNums.length % 2 != 0) {
+                return newNums[newNums.length/2];
+            } else {
+                return (newNums[newNums.length/2] + newNums[newNums.length/2 - 1])/2.0;
+            }
+        }
+
+        public static void main(String[] args) {
+            System.out.println(findMedianSortedArrays(new int[]{1,2}, new int[]{3,4}));
         }
     }
 }
