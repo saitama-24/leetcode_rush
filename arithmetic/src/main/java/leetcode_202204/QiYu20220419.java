@@ -103,7 +103,7 @@ public class QiYu20220419 {
             if (n == 2) {
                 return 1;
             }
-            int p, q = 1, r= 1, s= 2;
+            int p, q = 1, r = 1, s = 2;
             for (int i = 4; i <= n; i++) {
                 p = q;
                 q = r;
