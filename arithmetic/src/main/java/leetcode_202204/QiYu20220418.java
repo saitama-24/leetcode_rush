@@ -155,22 +155,17 @@ public class QiYu20220418 {
         public static int maxSatisfaction(int[] satisfaction) {
             Arrays.sort(satisfaction);
 
-            int len = satisfaction.length;
-            int max = 0;
-            if (satisfaction[len-1] <= 0) {
-                return max;
-            }
-
-            if (satisfaction[0] >= 0) {
-                int count = 1;
-                for (int i : satisfaction) {
-                    max += i * count++;
+            int pre = 0;
+            int ans = 0;
+            for (int i = satisfaction.length - 1; i >= 0; i--) {
+                if (pre + satisfaction[i] > 0) {
+                    pre += satisfaction[i];
+                    ans += pre;
+                } else {
+                    break;
                 }
-                return max;
             }
-
-            // todo 动态规划
-            return -1;
+            return ans;
         }
 
         public static void main(String[] args) {
