@@ -1,5 +1,8 @@
 package dp;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -146,7 +149,36 @@ public class dp20220419 {
      */
     static class Solution3 {
         public static int minimumTotal(List<List<Integer>> triangle) {
-            return -1;
+            int len = triangle.size();
+            int[][] f = new int[len][len];
+
+            f[0][0] = triangle.get(0).get(0);
+            for (int i = 1; i < len; i++) {
+                // 0索引等于自身值+上层的0索引值
+                f[i][0] = f[i-1][0] + triangle.get(i).get(0);
+                for (int j = 1; j < i; j++) {
+                    f[i][j] = triangle.get(i).get(j) + Math.min(f[i-1][j-1], f[i-1][j]);
+                }
+                // 最有一个点等于自身值+上层最有点值
+                f[i][i] = f[i-1][i-1] + triangle.get(i).get(i);
+            }
+
+            int min = f[len - 1][0];
+            for (int i = 0; i < len; i++) {
+                min = Math.min(f[len - 1][i], min);
+            }
+            return min;
+        }
+
+        public static void main(String[] args) {
+            List<List<Integer>> lists = new ArrayList<>();
+            lists.add(Collections.singletonList(2));
+            lists.add(Arrays.asList(3, 4));
+            lists.add(Arrays.asList(6, 5, -7000));
+            lists.add(Arrays.asList(3000, 1, 2, 5));
+            lists.add(Arrays.asList(1000, 2, 5, 6, 7));
+            lists.add(Arrays.asList(4, 1, 8, 3, 2, 6));
+            System.out.println(minimumTotal(lists));
         }
     }
 }
