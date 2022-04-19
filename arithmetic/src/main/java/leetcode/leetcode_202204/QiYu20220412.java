@@ -1,8 +1,6 @@
-package leetcode_202204;
+package leetcode.leetcode_202204;
 
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @ClassName: QiYu20220412

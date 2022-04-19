@@ -1,4 +1,4 @@
-package leetcode_202204;
+package leetcode.leetcode_202204;
 
 /**
  * @ClassName: QiYu20220414
