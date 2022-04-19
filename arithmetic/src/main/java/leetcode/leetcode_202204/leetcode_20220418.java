@@ -8,7 +8,7 @@ import java.util.*;
  * @Author: 琦玉
  * @Date: 2022年04月18日 15:56:38
  */
-public class QiYu20220418 {
+public class leetcode_20220418 {
 
     /**
      * 1

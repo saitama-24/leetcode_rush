@@ -6,7 +6,7 @@ package leetcode.leetcode_202204;
  * @Author: 琦玉
  * @Date: 2022年04月11日 14:35:47
  */
-public class QiYu20220411 {
+public class leetcode_20220411 {
     /**
      * 344. 反转字符串
      * 编写一个函数，其作用是将输入的字符串反转过来。输入字符串以字符数组 s 的形式给出。

@@ -10,7 +10,7 @@ import java.util.Set;
  * @Author: 琦玉
  * @Date: 2022年04月13日 11:39:23
  */
-public class QiYu20220413 {
+public class leetcode_20220413 {
 
 
     public static class ListNode {

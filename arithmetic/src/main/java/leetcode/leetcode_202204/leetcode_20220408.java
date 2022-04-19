@@ -8,7 +8,7 @@ import java.util.*;
  * @Author: 琦玉
  * @Date: 2022年04月08日 11:44:58
  */
-public class QiYu20220408 {
+public class leetcode_20220408 {
     /**
      * 283. 移动零
      * 给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。

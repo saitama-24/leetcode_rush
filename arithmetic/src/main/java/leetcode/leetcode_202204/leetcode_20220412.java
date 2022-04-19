@@ -8,7 +8,7 @@ import java.util.Arrays;
  * @Author: 琦玉
  * @Date: 2022年04月12日 19:39:17
  */
-public class QiYu20220412 {
+public class leetcode_20220412 {
 
     /**
      * 806. 写字符串需要的行数

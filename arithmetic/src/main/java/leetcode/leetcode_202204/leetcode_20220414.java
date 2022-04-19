@@ -6,7 +6,7 @@ package leetcode.leetcode_202204;
  * @Author: 琦玉
  * @Date: 2022年04月14日 10:58:13
  */
-public class QiYu20220414 {
+public class leetcode_20220414 {
 
     /**
      * 1672. 最富有客户的资产总量

@@ -6,7 +6,7 @@ package leetcode.leetcode_202204;
  * @Author: 琦玉
  * @Date: 2022年04月02日 10:58:49
  */
-public class QiYu20220402 {
+public class leetcode_20220402 {
 
     /**
      * 70. 爬楼梯

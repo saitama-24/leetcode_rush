@@ -9,7 +9,7 @@ import java.util.List;
  * @Author: 琦玉
  * @Date: 2022年04月01日 15:23:36
  */
-public class QiYu20220401 {
+public class leetcode_20220401 {
 
     /**
      * 自除数 是指可以被它包含的每一位数整除的数。

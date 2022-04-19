@@ -8,7 +8,7 @@ import java.util.Arrays;
  * @Author: 琦玉
  * @Date: 2022年04月19日 10:32:54
  */
-public class QiYu20220419 {
+public class leetcode_20220419 {
 
     /**
      * 821. 字符的最短距离

@@ -11,7 +11,7 @@ import java.util.Map;
  * @Author: 琦玉
  * @Date: 2022年04月15日 10:37:15
  */
-public class QiYu20220415 {
+public class leetcode_20220415 {
 
     /**
      * 217. 存在重复元素
