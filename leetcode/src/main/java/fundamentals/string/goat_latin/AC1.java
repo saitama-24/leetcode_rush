@@ -5,7 +5,7 @@ import java.util.Set;
 
 /**
  * @ClassName: AC1
- * @Description: AC1
+ * @Description: 824. 山羊拉丁文
  * @Author: 琦玉
  * @Date: 2022年04月21日 14:28:31
  */

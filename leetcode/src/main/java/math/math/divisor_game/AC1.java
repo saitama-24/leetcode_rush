@@ -2,7 +2,7 @@ package math.math.divisor_game;
 
 /**
  * @ClassName: AC1
- * @Description: AC1
+ * @Description: 1025. 除数博弈
  * @Author: 琦玉
  * @Date: 2022年04月21日 14:14:52
  */

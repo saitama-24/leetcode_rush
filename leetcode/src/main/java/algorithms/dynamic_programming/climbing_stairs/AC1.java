@@ -2,7 +2,7 @@ package algorithms.dynamic_programming.climbing_stairs;
 
 /**
  * @ClassName: AC1
- * @Description: AC1
+ * @Description: 70. 爬楼梯
  * @Author: 琦玉
  * @Date: 2022年04月21日 14:09:46
  */

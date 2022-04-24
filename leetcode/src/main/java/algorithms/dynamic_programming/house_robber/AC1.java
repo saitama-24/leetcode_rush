@@ -2,7 +2,7 @@ package algorithms.dynamic_programming.house_robber;
 
 /**
  * @ClassName: AC1
- * @Description: AC1
+ * @Description: 198. 打家劫舍
  * @Author: 琦玉
  * @Date: 2022年04月21日 14:11:26
  */

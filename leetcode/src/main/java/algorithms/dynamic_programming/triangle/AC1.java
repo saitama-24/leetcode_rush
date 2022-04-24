@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * @ClassName: AC1
- * @Description: AC1
+ * @Description: 120. 三角形最小路径和
  * @Author: 琦玉
  * @Date: 2022年04月21日 14:10:41
  */

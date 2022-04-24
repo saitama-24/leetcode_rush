@@ -2,7 +2,7 @@ package algorithms.dynamic_programming.min_cost_climbing_stairs;
 
 /**
  * @ClassName: AC1
- * @Description: AC1
+ * @Description: 746. 使用最小花费爬楼梯
  * @Author: 琦玉
  * @Date: 2022年04月21日 14:12:53
  */

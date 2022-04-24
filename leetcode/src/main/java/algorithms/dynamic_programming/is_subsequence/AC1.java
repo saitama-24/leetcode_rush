@@ -2,7 +2,7 @@ package algorithms.dynamic_programming.is_subsequence;
 
 /**
  * @ClassName: AC1
- * @Description: AC1
+ * @Description: 392. 判断子序列
  * @Author: 琦玉
  * @Date: 2022年04月21日 14:14:11
  */

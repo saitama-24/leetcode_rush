@@ -2,7 +2,7 @@ package algorithms.dynamic_programming.n_th_tribonacci_numbe;
 
 /**
  * @ClassName: AC1
- * @Description: AC1
+ * @Description: 1137. 第 N 个泰波那契数
  * @Author: 琦玉
  * @Date: 2022年04月21日 14:08:23
  */

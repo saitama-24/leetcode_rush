@@ -2,7 +2,7 @@ package algorithms.dynamic_programming.get_maximum_in_generated_array;
 
 /**
  * @ClassName: AC1
- * @Description: AC1
+ * @Description: 1646. 获取生成数组中的最大值
  * @Author: 琦玉
  * @Date: 2022年04月21日 14:15:40
  */

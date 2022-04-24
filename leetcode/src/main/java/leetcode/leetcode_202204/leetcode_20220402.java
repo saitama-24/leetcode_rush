@@ -2,7 +2,7 @@ package leetcode.leetcode_202204;
 
 /**
  * @ClassName: QiYu20220402
- * @Description: 20220402力扣刷题记录
+ * @Description: QiYu20220402
  * @Author: 琦玉
  * @Date: 2022年04月02日 10:58:49
  */
