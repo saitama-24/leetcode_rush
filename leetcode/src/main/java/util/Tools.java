@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("qing-wa-tiao-tai-jie-wen-ti-lcof"));
+        System.out.println(conventSpecChar("three-steps-problem-lcci"));
     }
 }
