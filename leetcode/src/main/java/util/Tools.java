@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("count-sorted-vowel-strings"));
+        System.out.println(conventSpecChar("subarray-product-less-than-k"));
     }
 }
