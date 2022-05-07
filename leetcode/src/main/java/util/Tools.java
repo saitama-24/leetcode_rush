@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("minimum-genetic-mutation"));
+        System.out.println(conventSpecChar("minimum-path-sum"));
     }
 }
