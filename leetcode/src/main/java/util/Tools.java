@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("partitioning-into-minimum-number-of-deci-binary-numbers"));
+        System.out.println(conventSpecChar("minimize-maximum-pair-sum-in-array"));
     }
 }
