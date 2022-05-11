@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("minimize-maximum-pair-sum-in-array"));
+        System.out.println(conventSpecChar("minimum-operations-to-make-the-array-increasing"));
     }
 }
