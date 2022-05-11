@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("largest-odd-number-in-string"));
+        System.out.println(conventSpecChar("partitioning-into-minimum-number-of-deci-binary-numbers"));
     }
 }
