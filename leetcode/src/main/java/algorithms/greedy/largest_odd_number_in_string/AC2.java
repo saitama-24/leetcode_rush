@@ -1,12 +1,12 @@
 package algorithms.greedy.largest_odd_number_in_string;
 
 /**
- * @ClassName: AC1
+ * @ClassName: AC2
  * @Description: 1903. 字符串中的最大奇数
  * @Author: 琦玉
  * @Date: 2022年05月10日 18:11:01
  */
-public class AC1 {
+public class AC2 {
 
     /**
      * 1903. 字符串中的最大奇数
@@ -41,23 +41,15 @@ public class AC1 {
     static class Solution {
         public static String largestOddNumber(String num) {
             char[] chars = num.toCharArray();
-            int idx = -1;
+            int idx;
             for (int i = chars.length - 1; i >= 0; i--) {
                 if (((chars[i] - '0') & 1) == 1) {
                     // 说明是奇数
                     idx = i;
-                    break;
+                    return num.substring(0, idx + 1);
                 }
             }
-            if (idx == -1) {
-                return "";
-            } else {
-                StringBuilder stringBuilder = new StringBuilder();
-                for (int i = 0; i <= idx; i++) {
-                    stringBuilder.append(chars[i]);
-                }
-                return stringBuilder.toString();
-            }
+            return "";
         }
 
         public static void main(String[] args) {
