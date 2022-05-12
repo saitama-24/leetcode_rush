@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("two-city-scheduling"));
+        System.out.println(conventSpecChar("minimum-sum-of-four-digit-number-after-splitting-digits"));
     }
 }
