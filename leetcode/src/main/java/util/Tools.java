@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("maximum-ice-cream-bars"));
+        System.out.println(conventSpecChar("delete-columns-to-make-sorted"));
     }
 }
