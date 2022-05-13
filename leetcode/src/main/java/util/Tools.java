@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("minimum-sum-of-four-digit-number-after-splitting-digits"));
+        System.out.println(conventSpecChar("one-away-lcci"));
     }
 }
