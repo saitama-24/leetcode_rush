@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("minimum-number-of-operations-to-convert-time"));
+        System.out.println(conventSpecChar("reduce-array-size-to-the-half"));
     }
 }
