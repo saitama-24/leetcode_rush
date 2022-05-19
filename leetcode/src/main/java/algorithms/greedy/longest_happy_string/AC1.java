@@ -46,6 +46,7 @@ public class AC1 {
      */
     static class Solution {
         public static String longestDiverseString(int a, int b, int c) {
+            // 主要是需要一个能够维护字符和剩余次数的优先级队列
             PriorityQueue<int[]> queue = new PriorityQueue<>((x, y) -> y[1] - x[1]);
             if (a > 0) {
                 queue.add(new int[]{0, a});
