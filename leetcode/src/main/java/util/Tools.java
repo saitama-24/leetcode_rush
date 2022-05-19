@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("longest-happy-string"));
+        System.out.println(conventSpecChar("lemonade-change"));
     }
 }
