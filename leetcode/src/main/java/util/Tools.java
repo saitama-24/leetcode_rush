@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("partition-array-according-to-given-pivot"));
+        System.out.println(conventSpecChar("maximum-twin-sum-of-a-linked-list"));
     }
 }
