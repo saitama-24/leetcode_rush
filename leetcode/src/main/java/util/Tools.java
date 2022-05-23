@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("duplicate-zeros"));
+        System.out.println(conventSpecChar("build-array-from-permutation"));
     }
 }
