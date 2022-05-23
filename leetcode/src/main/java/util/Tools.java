@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("find-first-palindromic-string-in-the-array"));
+        System.out.println(conventSpecChar("duplicate-zeros"));
     }
 }
