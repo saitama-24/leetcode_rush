@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("univalued-binary-tree"));
+        System.out.println(conventSpecChar("same-tree"));
     }
 }
