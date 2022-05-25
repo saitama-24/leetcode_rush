@@ -42,8 +42,16 @@ public class AC1 {
      */
     static class Solution {
         public static int numWays(int n, int[][] relation, int k) {
-            // todo bfs、dfs、dp
-            return 0;
+            // 定义动态规划的状态 dp[i][j] 为经过 i 轮传递到编号 j 的玩家的方案数，其中 0 ≤i≤ k，0 ≤j< n。
+            int[][] dp = new int[k + 1][n];
+            dp[0][0] = 1;
+            for (int i = 0; i < k; i++) {
+                for (int[] edge : relation) {
+                    int src = edge[0], dst = edge[1];
+                    dp[i + 1][dst] += dp[i][src];
+                }
+            }
+            return dp[k][n - 1];
         }
     }
 }
