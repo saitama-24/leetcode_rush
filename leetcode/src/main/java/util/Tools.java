@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("coin-change-2"));
+        System.out.println(conventSpecChar("minimum-cost-for-tickets"));
     }
 }
