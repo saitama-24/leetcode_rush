@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("minimum-time-to-type-word-using-special-typewriter"));
+        System.out.println(conventSpecChar("minimum-cost-to-move-chips-to-the-same-position"));
     }
 }
