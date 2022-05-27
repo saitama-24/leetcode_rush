@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("li-wu-de-zui-da-jie-zhi-lcof"));
+        System.out.println(conventSpecChar("find-closest-lcci"));
     }
 }
