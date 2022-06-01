@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("partition-array-into-three-parts-with-equal-sum"));
+        System.out.println(conventSpecChar("sum-of-all-subset-xor-totals"));
     }
 }
