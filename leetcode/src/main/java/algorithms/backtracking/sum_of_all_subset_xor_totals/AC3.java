@@ -28,7 +28,7 @@ public class AC3 {
         return res;
     }
 
-    private void dfs(int i, int[] nums, int len, int depth,
+    private void dfs(int begin, int[] nums, int len, int depth,
                      Deque<Integer> path, boolean[] used,
                      List<List<Integer>> res) {
         if (depth == len) {
@@ -36,7 +36,7 @@ public class AC3 {
             return;
         }
 
-        for (int j = i; j < len; j++) {
+        for (int j = begin; j < len; j++) {
 //            if (!used[i]) {
                 path.addLast(nums[j]);
 //                used[i] = true;
