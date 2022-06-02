@@ -45,11 +45,11 @@ public class AC1 {
             List<List<Integer>> lists = new ArrayList<>();
             Deque<Integer> deque = new ArrayDeque<>();
             boolean[] used = new boolean[len];
-            dfs(0, lists, deque, nums, len, used);
+            dfs(lists, deque, nums, len, used);
             return lists;
         }
 
-        public static void dfs(int depth, List<List<Integer>> lists, Deque<Integer> deque, int[] nums, int len, boolean[] used) {
+        public static void dfs(List<List<Integer>> lists, Deque<Integer> deque, int[] nums, int len, boolean[] used) {
             if (deque.size() == len) {
                 lists.add(new ArrayList<>(deque));
             }
@@ -59,7 +59,7 @@ public class AC1 {
                 }
                 used[i] = true;
                 deque.add(nums[i]);
-                dfs(depth + 1, lists, deque, nums, len, used);
+                dfs(lists, deque, nums, len, used);
                 used[i] = false;
                 deque.removeLast();
             }
