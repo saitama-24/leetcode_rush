@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("subsets-ii"));
+        System.out.println(conventSpecChar("koko-eating-bananas"));
     }
 }
