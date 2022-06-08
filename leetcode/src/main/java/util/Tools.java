@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("rabbits-in-forest"));
+        System.out.println(conventSpecChar("valid-boomerang"));
     }
 }
