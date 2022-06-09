@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("minimum-time-to-make-rope-colorful"));
+        System.out.println(conventSpecChar("remove-digit-from-number-to-maximize-result"));
     }
 }
