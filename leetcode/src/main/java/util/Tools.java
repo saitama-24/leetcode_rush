@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("removing-minimum-and-maximum-from-array"));
+        System.out.println(conventSpecChar("gas-station"));
     }
 }
