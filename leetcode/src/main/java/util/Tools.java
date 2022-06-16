@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("er-fen-cha-zhao-hua-dong-chuang-kou-java-8q95"));
+        System.out.println(conventSpecChar("k-diff-pairs-in-an-array"));
     }
 }
