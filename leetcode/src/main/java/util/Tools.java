@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("k-diff-pairs-in-an-array"));
+        System.out.println(conventSpecChar("couples-holding-hand"));
     }
 }
