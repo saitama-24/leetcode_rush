@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("minimum-initial-energy-to-finish-tasks"));
+        System.out.println(conventSpecChar("earliest-possible-day-of-full-bloom"));
     }
 }
