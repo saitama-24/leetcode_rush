@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("maximum-bags-with-full-capacity-of-rocks"));
+        System.out.println(conventSpecChar("pi-liao-de-ji-suan-qi-by-leetcode"));
     }
 }
