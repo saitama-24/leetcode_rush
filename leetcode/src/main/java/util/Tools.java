@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("deepest-leaves-sum"));
+        System.out.println(conventSpecChar("substring-with-concatenation-of-all-words"));
     }
 }
