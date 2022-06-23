@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("substring-with-concatenation-of-all-words"));
+        System.out.println(conventSpecChar("sum-of-nodes-with-even-valued-grandparent"));
     }
 }
