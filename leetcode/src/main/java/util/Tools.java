@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("sum-of-nodes-with-even-valued-grandparent"));
+        System.out.println(conventSpecChar("find-largest-value-in-each-tree-row"));
     }
 }
