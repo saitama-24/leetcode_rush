@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("find-largest-value-in-each-tree-row"));
+        System.out.println(conventSpecChar("wiggle-sort-ii"));
     }
 }
