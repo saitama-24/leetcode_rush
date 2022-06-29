@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("wiggle-sort-ii"));
+        System.out.println(conventSpecChar("encode-and-decode-tinyurl"));
     }
 }
