@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("x-of-a-kind-in-a-deck-of-cards"));
+        System.out.println(conventSpecChar("number-of-segments-in-a-string"));
     }
 }
