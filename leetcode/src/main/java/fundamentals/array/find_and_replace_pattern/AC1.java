@@ -1,7 +1,5 @@
 package fundamentals.array.find_and_replace_pattern;
 
-import sun.security.util.Length;
-
 import java.util.ArrayList;
 import java.util.List;
 
