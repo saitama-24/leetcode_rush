@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("cells-with-odd-values-in-a-matrix"));
+        System.out.println(conventSpecChar("minimum-moves-to-reach-target-score"));
     }
 }
