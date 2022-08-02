@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("maximum-value-after-insertion"));
+        System.out.println(conventSpecChar("sell-diminishing-valued-colored-balls"));
     }
 }
