@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("sell-diminishing-valued-colored-balls"));
+        System.out.println(conventSpecChar("minimum-subsequence-in-non-increasing-order"));
     }
 }
