@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("add-one-row-to-tree"));
+        System.out.println(conventSpecChar("sub-sort-lcci"));
     }
 }
