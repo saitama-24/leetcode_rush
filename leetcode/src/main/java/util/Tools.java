@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("minimum-value-to-get-positive-step-by-step-sum"));
+        System.out.println(conventSpecChar("reformat-the-string"));
     }
 }
