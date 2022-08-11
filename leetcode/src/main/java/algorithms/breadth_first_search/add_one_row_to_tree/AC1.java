@@ -1,7 +1,7 @@
 package algorithms.breadth_first_search.add_one_row_to_tree;
 
-import java.util.ArrayDeque;
-import java.util.Queue;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @ClassName: AC1
@@ -68,19 +68,28 @@ public class AC1 {
      */
     static class Solution {
         public static TreeNode addOneRow(TreeNode root, int val, int depth) {
-            // todo 未完成
-            Queue<TreeNode> queue = new ArrayDeque<>();
-            queue.add(root);
-            int currDepth = 1;
-
-            return root;
-        }
-
-        public static TreeNode findNode(TreeNode root, int depth) {
-            if (depth == 0) {
-                return root;
+            if (depth == 1) {
+                return new TreeNode(val, root, null);
             }
-            return findNode(root.left, depth - 1);
+            List<TreeNode> curLevel = new ArrayList<>();
+            curLevel.add(root);
+            for (int i = 1; i < depth - 1; i++) {
+                List<TreeNode> tmp = new ArrayList<>();
+                for (TreeNode node : curLevel) {
+                    if (node.left != null) {
+                        tmp.add(node.left);
+                    }
+                    if (node.right != null) {
+                        tmp.add(node.right);
+                    }
+                }
+                curLevel = tmp;
+            }
+            for (TreeNode node : curLevel) {
+                node.left = new TreeNode(val, node.left, null);
+                node.right = new TreeNode(val, null, node.right);
+            }
+            return root;
         }
 
         public static void main(String[] args) {
