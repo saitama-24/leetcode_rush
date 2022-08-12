@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("reformat-the-string"));
+        System.out.println(conventSpecChar("group-the-people-given-the-group-size-they-belong-to"));
     }
 }
