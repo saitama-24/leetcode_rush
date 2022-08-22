@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("number-of-students-doing-homework-at-a-given-time"));
+        System.out.println(conventSpecChar("print-binary-tree"));
     }
 }
