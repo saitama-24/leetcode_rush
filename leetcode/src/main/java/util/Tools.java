@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("largest-number"));
+        System.out.println(conventSpecChar("make-two-arrays-equal-by-reversing-sub-arrays"));
     }
 }
