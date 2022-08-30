@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("can-place-flowers"));
+        System.out.println(conventSpecChar("most-profit-assigning-work"));
     }
 }
