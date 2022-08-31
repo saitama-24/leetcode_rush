@@ -1,8 +1,6 @@
 package common_data_structures.stack.validate_stack_sequences;
 
-import java.util.HashSet;
-import java.util.Set;
-import java.util.Stack;
+import java.util.*;
 
 /**
  * @ClassName: AC1
@@ -42,7 +40,7 @@ public class AC1 {
      */
     static class Solution {
         public static boolean validateStackSequences(int[] pushed, int[] popped) {
-            Stack<Integer> stack = new Stack<>();
+            Deque<Integer> stack = new ArrayDeque<>();
             int p1 = 0, p2 = 0;
             Set<Integer> set = new HashSet<>();
             while (p1 != pushed.length || p2 != pushed.length) {
