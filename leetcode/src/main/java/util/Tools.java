@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("most-profit-assigning-work"));
+        System.out.println(conventSpecChar("validate-stack-sequences"));
     }
 }
