@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("final-prices-with-a-special-discount-in-a-shop"));
+        System.out.println(conventSpecChar("mean-of-array-after-removing-some-elements"));
     }
 }
