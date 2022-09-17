@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("mean-of-array-after-removing-some-elements"));
+        System.out.println(conventSpecChar("largest-substring-between-two-equal-characters"));
     }
 }
