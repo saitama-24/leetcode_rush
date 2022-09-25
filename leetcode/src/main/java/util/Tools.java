@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("check-array-formation-through-concatenation"));
+        System.out.println(conventSpecChar("distribute-candies-to-people"));
     }
 }
