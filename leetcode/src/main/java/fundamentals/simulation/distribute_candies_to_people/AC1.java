@@ -1,5 +1,14 @@
 package fundamentals.simulation.distribute_candies_to_people;
 
+import java.util.Arrays;
+
+/**
+ * @author wangzhenjie
+ * @version 1.0
+ * @date 2022/9/25 17:25
+ * @className: AC1
+ * @description: 1103. 分糖果 II
+ */
 public class AC1 {
 
     /**
@@ -44,8 +53,33 @@ public class AC1 {
      * 1 <= num_people <= 1000
      */
     static class Solution {
+        /**
+        * @param candies 糖果数
+	    * @param num_people 小朋友数
+        * @return int[]
+        * @description 1103. 分糖果 II
+        * @date 2022/9/25 17:26
+        * @author qiyu
+        **/
         public static int[] distributeCandies(int candies, int num_people) {
-            return new int[]{};
+            int[] arr = new int[num_people];
+            int count = 1;
+            int idx = 0;
+            while (candies > 0) {
+                int alloc = Math.min(candies, count);
+                arr[idx] += alloc;
+                idx++;
+                if (idx == num_people) {
+                    idx = 0;
+                }
+                count++;
+                candies -= alloc;
+            }
+            return arr;
+        }
+
+        public static void main(String[] args) {
+            System.out.println(Arrays.toString(distributeCandies(10, 3)));
         }
     }
 }
