@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("check-if-one-string-swap-can-make-strings-equal"));
+        System.out.println(conventSpecChar("linked-list-components"));
     }
 }
