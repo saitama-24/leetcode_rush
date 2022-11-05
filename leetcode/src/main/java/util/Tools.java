@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("next-greater-element-ii"));
+        System.out.println(conventSpecChar("the-number-of-weak-characters-in-the-game"));
     }
 }
