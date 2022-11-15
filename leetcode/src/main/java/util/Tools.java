@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("next-greater-element-i"));
+        System.out.println(conventSpecChar("maximum-units-on-a-truck"));
     }
 }
