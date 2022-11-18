@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("number-of-matching-subsequences"));
+        System.out.println(conventSpecChar("daily-temperatures"));
     }
 }
