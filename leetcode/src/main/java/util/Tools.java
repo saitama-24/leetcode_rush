@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("container-with-most-water/description"));
+        System.out.println(conventSpecChar("maximum-number-of-balls-in-a-box"));
     }
 }
