@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("number-of-subarrays-with-bounded-maximum"));
+        System.out.println(conventSpecChar("expressive-words"));
     }
 }
