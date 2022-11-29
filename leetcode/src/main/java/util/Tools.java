@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("check-if-array-is-sorted-and-rotated"));
+        System.out.println(conventSpecChar("minimum-changes-to-make-alternating-binary-string"));
     }
 }
