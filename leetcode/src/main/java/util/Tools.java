@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("determine-color-of-a-chessboard-square"));
+        System.out.println(conventSpecChar("check-if-the-sentence-is-pangram"));
     }
 }
