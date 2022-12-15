@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("reverse-linked-list"));
+        System.out.println(conventSpecChar("sum-of-digits-of-string-after-convert"));
     }
 }
