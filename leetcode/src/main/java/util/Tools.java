@@ -18,6 +18,6 @@ public class Tools {
     }
 
     public static void main(String[] args) {
-        System.out.println(conventSpecChar("count-integers-with-even-digit-sum"));
+        System.out.println(conventSpecChar("make-array-zero-by-subtracting-equal-amounts"));
     }
 }
